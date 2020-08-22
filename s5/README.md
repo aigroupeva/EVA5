@@ -1,7 +1,10 @@
 #Team members
 1> Abhinav Rana (rabhinavcs@gmail.com)
+
 2> Prashant Shinagare (techemerging1@gmail.com)
-3> Yadunandan Huded ()
+
+3> Yadunandan Huded (yadunandanlh64@gmail.com)
+
 4> Pruthiraj Jayasingh (data.pruthiraj@gmail.com)
 
 # **<u>Model Number</u>**
