@@ -39,9 +39,8 @@ About Cifar - 10:
 Analysis: the model is over fit as the gap between training and testing is high after cert-en epochs . can use image augmentation and batch norm to overcome this. 
 
 plots:
-
-![image-20200915080744081](/home/jd/.config/Typora/typora-user-images/image-20200915080744081.png)
+https://github.com/aigroupeva/EVA5/blob/master/session7/model_history.png
 
 Miss classification images:
 
-![image-20200915080823639](/home/jd/.config/Typora/typora-user-images/image-20200915080823639.png)
+https://github.com/aigroupeva/EVA5/blob/master/session7/model_misclassified.png
