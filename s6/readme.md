@@ -1,3 +1,10 @@
+Team
+
+1> Abhinav Rana (rabhinavcs@gmail.com)
+
+2> Prashant Shinagare (techemerging1@gmail.com)
+
+3> Pruthiraj Jayasingh (data.pruthiraj@gmail.com)
 
 
 ### What is code about ?
