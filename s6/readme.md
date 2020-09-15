@@ -51,7 +51,7 @@ and best Test and Training Accuracy was observed.
 
 4. with GBN
 
-   ![](GBN_missclassified_images.jpg)
+   ![GBN_missclassified_images](GBN_missclassified_images.jpg)
 
 5. with L1 and L2 with GBN
 
