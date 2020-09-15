@@ -47,7 +47,7 @@ and best Test and Training Accuracy was observed.
 
 3. with L1 and L2 with BN
 
-   ![L1 & L2 + BN]('L1 & L2 + BN_missclassified_images.jpg')
+   ![L1 & L2 + BN](L1&L2+BN_missclassified_images.jpg)
 
 4. with GBN
 
@@ -55,7 +55,7 @@ and best Test and Training Accuracy was observed.
 
 5. with L1 and L2 with GBN
 
-   ![L1 and L2 + GBN]("L1 & L2 + GBN_missclassified_images.jpg")
+   ![L1 and L2 + GBN](L1&L2+GBN_missclassified_images.jpg")
 
 ---
 
