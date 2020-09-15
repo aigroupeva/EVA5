@@ -1,3 +1,11 @@
+1> Abhinav Rana (rabhinavcs@gmail.com)
+
+2> Prashant Shinagare (techemerging1@gmail.com)
+
+3> Pruthiraj Jayasingh (data.pruthiraj@gmail.com)
+
+
+
 # Assignment 7 : Cifar-10,Depth wise Separable Convolution and dilation Convolution.
 
 About the Code :
