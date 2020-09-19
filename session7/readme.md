@@ -4,6 +4,7 @@
 
 3> Pruthiraj Jayasingh (data.pruthiraj@gmail.com)
 
+4> Madhu Charan (madhucharan512@gmail.com)
 
 
 # Assignment 7 : Cifar-10,Depth wise Separable Convolution and dilation Convolution.
