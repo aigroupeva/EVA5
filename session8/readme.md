@@ -1,3 +1,11 @@
+1> Abhinav Rana (rabhinavcs@gmail.com)
+
+2> Prashant Shinagare (techemerging1@gmail.com)
+
+3> Pruthiraj Jayasingh (data.pruthiraj@gmail.com)
+
+4> Madhu Charan (madhucharan512@gmail.com)
+
 # Assignment 8 : Cifar-10,Restnet 18 Pluggin.
 
 About the Code :
