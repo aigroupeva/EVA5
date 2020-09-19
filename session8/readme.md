@@ -1,4 +1,4 @@
-# Assignment 7 : Cifar-10,Depth wise Separable Convolution and dilation Convolution.
+# Assignment 8 : Cifar-10,Restnet 18 Pluggin.
 
 About the Code :
 
