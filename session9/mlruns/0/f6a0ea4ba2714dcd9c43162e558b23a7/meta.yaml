@@ -1,0 +1,15 @@
+artifact_uri: file:///home/abhinav/Documents/EVA5/session9/mlruns/0/f6a0ea4ba2714dcd9c43162e558b23a7/artifacts
+end_time: 1601065575844
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f6a0ea4ba2714dcd9c43162e558b23a7
+run_uuid: f6a0ea4ba2714dcd9c43162e558b23a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1601065575739
+status: 3
+tags: []
+user_id: abhinav

@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from torchviz import make_dot
+import torch
+from torch.autograd import Variable
 
 
 # functions to show an image
@@ -120,3 +123,14 @@ def plot_dataset_images(device, classes, data_loader, num_of_images=20):
         if(cnt==num_of_images):
             break
     return
+
+
+def graphical_summary_cifar10(model, use_cuda=True, save=True):
+    random_input = torch.randn(1, 3, 32, 32).cuda() if use_cuda else torch.randn(1, 3, 32, 32) 
+    model.eval()
+    y = model(Variable(random_input))
+    dot_graph = make_dot(y)
+    if save:
+        dot_graph.format = 'svg'
+        dot_graph.render(f'model_architecture')
+    return dot_graph
