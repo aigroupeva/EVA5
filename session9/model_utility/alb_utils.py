@@ -87,9 +87,9 @@ def get_data_transform(path):
     train_albumentation_transform = A.Compose([
                                     A.Cutout(num_holes=2,max_h_size=8,max_w_size=8,fill_value=[i*255 for i in mean],always_apply=True,p=0.5),
 #                                     A.RandomCrop(height=8,width=8,p=0.020,always_apply=False),
-#                                     A.HorizontalFlip(p = 0.7,always_apply=True),
+                                    A.HorizontalFlip(p = 0.7,always_apply=True),
 #                                     A.ElasticTransform(alpha=1,sigma=50,alpha_affine=10,interpolation=1,border_mode=4,value=None,mask_value=None,always_apply=False,approximate=False,p=0.1),
-                                    A.CoarseDropout(max_holes=1,max_height=16,max_width=16,min_holes=None,min_height=4,min_width=4,fill_value=[i*255 for i in mean],always_apply=True,p=0.7,),
+                                          A.CoarseDropout(max_holes=1,max_height=16,max_width=16,min_holes=None,min_height=4,min_width=4,fill_value=[i*255 for i in mean],always_apply=True,p=0.7,),
                                     A.Normalize(mean=tuple(mean),std=tuple(stdev), max_pixel_value=255,always_apply=True, p=1.0),
                                     A.Resize(input_size,input_size),
                                         ToTensor()])
@@ -119,13 +119,17 @@ def get_dataset(train_transforms, test_transforms,path):
     testset = datasets.CIFAR10(path, train=False, download=True, transform=test_transforms)
     return trainset, testset
 
-def get_dataloader(batch_size, num_workers, cuda,path):
+
+# get_dataloader can now return trainset,testset, train_loader, test_loader
+
+def get_dataloader(batch_size, num_workers, cuda,path ):
     
     print("Running over Cuda !! ", cuda)
     dataloader_args = dict(shuffle=True, batch_size=batch_size, num_workers=4, pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
 
     train_transforms, test_transforms = get_data_transform(path)
     trainset, testset = get_dataset(train_transforms, test_transforms,path)
+    
 
     # train dataloader
     train_loader = torch.utils.data.DataLoader(trainset, **dataloader_args)
@@ -133,4 +137,8 @@ def get_dataloader(batch_size, num_workers, cuda,path):
     # test dataloader
     test_loader = torch.utils.data.DataLoader(testset, **dataloader_args)
 
-    return train_loader, test_loader
+    
+    return trainset, testset, train_loader, test_loader
+
+
+
